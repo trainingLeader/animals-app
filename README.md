@@ -62,4 +62,4 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql --version 7.0.0
 dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10
 dotnet add package CsvHelper --version 30.0.1
 
-![image](https://drive.google.com/file/d/1pst95gYdKZcRnal7iGLq47HFKBkr4lsm)
+![image](https://drive.google.com/uc?export=view&id=1pst95gYdKZcRnal7iGLq47HFKBkr4lsm)
