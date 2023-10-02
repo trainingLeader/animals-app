@@ -10,4 +10,6 @@ namespace Core.Entities;
         public string NombreCiudad { get; set; }
 
         public int IdDep { get; set; }
+        public Departamento Departamento { get; set; }
+        public ICollection<Cliente> Clientes { get; set; } 
     }

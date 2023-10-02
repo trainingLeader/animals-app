@@ -16,11 +16,14 @@ namespace Core.Entities
 
         [Required]
         public int IdRaza { get; set; }
+        public Raza Raza { get; set; }
 
         [Required]
         public DateTime FechaNacimiento { get; set; }
 
         [Required]
-        public int IdCliente { get; set; }        
+        public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
+        public ICollection<Cita> Citas { get; set; }         
     }
 }
