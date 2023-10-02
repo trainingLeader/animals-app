@@ -27,6 +27,11 @@ public class AnimalsContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+         /*modelBuilder.Entity<Cliente>()
+        .HasOne(a => a.ClienteDireccion)
+        .WithOne(b => b.Clientes)
+        .HasForeignKey<ClienteDireccion>(b => b.IdCliente);*/
+
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
     }
