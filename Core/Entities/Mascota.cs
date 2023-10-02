@@ -23,7 +23,7 @@ namespace Core.Entities
 
         [Required]
         public int IdCliente { get; set; }
-        public Cliente Cliente { get; set; }
+        public Cliente Clientes { get; set; }
         public ICollection<Cita> Citas { get; set; }         
     }
 }
