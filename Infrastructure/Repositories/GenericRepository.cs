@@ -50,27 +50,22 @@ namespace Infrastructure.Repositories
         {
             return await _context.Set<T>().FindAsync(id);
         }
-
         public virtual void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
         }
-
         public virtual void RemoveRange(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
         }
-
         public virtual void Update(T entity)
         {
             _context.Set<T>().Update(entity);
         }
-
         public virtual async Task<(int totalRegistros, IEnumerable<T> registros)> GetAllAsync(
             int pageIndex,
             int pageSize,
-            string _search
-        )
+            string _search)
         {
             var totalRegistros = await _context.Set<T>().CountAsync();
             var registros = await _context
