@@ -13,6 +13,12 @@ namespace ApiAnimals.Profiles
             public MappingProfiles()
             {
                 CreateMap<Pais,PaisDto>().ReverseMap();
+                CreateMap<Departamento, DepartamentoDto>().ReverseMap();
+                CreateMap<Ciudad, CiudadDto>().ReverseMap();
+                CreateMap<Raza, RazaDto>().ReverseMap();
+                CreateMap<Cliente, ClienteDto>().ReverseMap();
+                CreateMap<Mascota, MascotaDto>().ReverseMap();
             }
+            
     }
 }
