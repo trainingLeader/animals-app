@@ -20,6 +20,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     private ClienteTelRepository _clientestel;
     private ClienteDirRepository _clientesdir;
     private ServicioRepository _servicios;
+    private CitaRepository _citas;
 
     public IPaisRepository Paises
     {
@@ -126,6 +127,17 @@ public class UnitOfWork : IUnitOfWork, IDisposable
                 _clientesdir = new ClienteDirRepository(_context);
             }
             return _clientesdir;
+        }
+    }
+        public ICitaRepository Citas
+    {
+        get
+        {
+            if (_citas == null)
+            {
+                _citas = new CitaRepository(_context);
+            }
+            return _citas;
         }
     }
 
